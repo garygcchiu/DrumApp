@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">DrumApp</string>
+    <string name="label_kick">Kick</string>
+    <string name="label_snare">Snare</string>
+    <string name="label_clap">Clap</string>
+    <string name="label_hhat_o">HiHat O</string>
+
+    <string name="label_bass">Bass</string>
+    <string name="label_ride">Ride</string>
+    <string name="label_crash">Crash</string>
+    <string name="label_hhat_c">HiHat C</string>
+
+    <string name="label_rec">Record</string>
+    <string name="label_play">Play</string>
+
 </resources>
