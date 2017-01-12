@@ -1,3 +1,3 @@
 # DrumApp
 
-Simple Drumkit Android application. 
+Simple Drumpad Android application. 
