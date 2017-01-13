@@ -19,21 +19,19 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        // declare the appropriate buttons
         final Button kick = (Button) findViewById(R.id.button_kick);
-        Button snare = (Button) findViewById(R.id.button_snare);
-        Button clap = (Button) findViewById(R.id.button_clap);
-        Button hhat_o = (Button) findViewById(R.id.button_hhat_o);
+        final Button snare = (Button) findViewById(R.id.button_snare);
+        final Button clap = (Button) findViewById(R.id.button_clap);
+        final Button hhat_o = (Button) findViewById(R.id.button_hhat_o);
 
-        Button bass = (Button) findViewById(R.id.button_bass);
-        Button ride = (Button) findViewById(R.id.button_ride);
-        Button snap = (Button) findViewById(R.id.button_snap);
-        Button hhat_c = (Button) findViewById(R.id.button_hhat_c);
+        final Button bass = (Button) findViewById(R.id.button_bass);
+        final Button ride = (Button) findViewById(R.id.button_ride);
+        final Button snap = (Button) findViewById(R.id.button_snap);
+        final Button hhat_c = (Button) findViewById(R.id.button_hhat_c);
 
-        ToggleButton rec = (ToggleButton) findViewById(R.id.button_rec);
-        ToggleButton play = (ToggleButton) findViewById(R.id.button_play);
-
-        //final MediaPlayer mp_kick = MediaPlayer.create(this, R.raw.kick);
+        final ToggleButton rec = (ToggleButton) findViewById(R.id.button_rec);
+        final ToggleButton play = (ToggleButton) findViewById(R.id.button_play);
 
         // create SoundPool object to handle playback
         final SoundPool player = new SoundPool(8, AudioManager.STREAM_MUSIC,  0);
@@ -48,6 +46,7 @@ public class MainActivity extends AppCompatActivity {
         final int snapSoundID = player.load(this, R.raw.snap, 1);
         final int hhatcSoundID = player.load(this, R.raw.hhatc, 1);
 
+        // create onClickListeners to play sound when button clicked
         kick.setOnClickListener(new OnClickListener(){
             public void onClick(View v){
                 player.play(kickSoundID, 1, 1, 8, 0, 1);
