@@ -13,4 +13,7 @@
     <string name="label_rec">Record</string>
     <string name="label_play">Play</string>
 
+    <string name="recording">Recording!</string>
+    <string name="not_recording">Recording stopped, saving…</string>
+
 </resources>
