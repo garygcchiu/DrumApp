@@ -13,7 +13,14 @@
     <string name="label_rec">Record</string>
     <string name="label_play">Play</string>
 
+    <string name="label_reset">Reset defaults</string>
+
     <string name="recording">Recording!</string>
     <string name="not_recording">Recording stopped, saving…</string>
+
+    <string name="no_record_saved">There is no recording saved!</string>
+
+    <string name="no_file_manager">Please install a file manager!</string>
+    <string name="open_file">Select music file…</string>
 
 </resources>

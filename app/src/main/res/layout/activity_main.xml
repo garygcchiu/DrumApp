@@ -10,7 +10,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="gary.drumapp.MainActivity"
-    android:rowCount="2"
+    android:rowCount="3"
     android:columnCount="5">
 
     <Button
@@ -91,6 +91,7 @@
         android:clickable="true"
         android:layout_row="0"
         android:layout_column="0"
+        android:layout_columnSpan="3"
         android:gravity="bottom|center" />
 
     <ToggleButton
@@ -104,7 +105,7 @@
         android:textOff="@string/label_rec"
         android:textOn="@string/label_rec" />
 
-    <ToggleButton
+    <Button
         android:text="@string/label_play"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -112,8 +113,26 @@
         android:layout_column="4"
         android:clickable="true"
         android:id="@+id/button_play"
-        android:layout_gravity="center"
-        android:textOff="@string/label_play"
-        android:textOn="@string/label_play" />
+        android:layout_gravity="center" />
+
+    <RelativeLayout
+        android:orientation="horizontal"
+        android:layout_width="541dp"
+        android:layout_height="@dimen/activity_vertical_margin"
+        android:layout_row="2"
+        android:layout_column="0"
+        android:layout_columnSpan="5"
+        android:weightSum="1">
+
+        <Button
+            android:text="@string/label_reset"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:clickable="true"
+            android:id="@+id/button_reset"
+            android:layout_centerInParent="true" />
+
+    </RelativeLayout>
+
 
 </GridLayout>
