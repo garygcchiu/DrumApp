@@ -3,7 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">32dp</dimen>
     <dimen name="activity_row_margin">32dp</dimen>
-    <dimen name="button_width">120dp</dimen>
+    <dimen name="button_width">135dp</dimen>
     <dimen name="button_mini">60dp</dimen>
 
 
